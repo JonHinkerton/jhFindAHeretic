@@ -211,11 +211,11 @@ class jhfhAnswerCheck : GameAction
         };
 
         int level = Game.Instance.Player.PartyLevel;
-        if (level <= 15)
+        if (level <= 20)
         {
             return 0; // Yellow
         }
-        else if (level > 15 && level <= 30)
+        else if (level > 20 && level <= 35)
         {
             return 1; // Orange
         }

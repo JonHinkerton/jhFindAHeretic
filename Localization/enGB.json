@@ -6,11 +6,11 @@
         },
 		"4671b885-d603-4946-af70-40950d4e5650": {
             "Offset": 0,
-            "Text": "Lord Cap'n, there are reports from the enforces of an incursion within the ship by our foes and we have spotted ships of the enemies of humanity at the edge of the system. Which would you prefer to face?"
+            "Text": "Lord Cap'n, the enforces have reported an incursion within the ship by nefarious forces and the auger crews have spotted hostile ships lurking at the edge of the system. What are your orders?"
         },
 		"18ed6a24-53ea-4bb7-b1f7-51c36dfcb914": {
             "Offset": 0,
-            "Text": "My retinue is restless. I shall take personal command of the crushing of the incursion aboard the ship."
+            "Text": "My retinue is restless. Inform Sauerback that I shall deal with the situation aboard the ship personally."
         },
         "38e0b0cc-45b4-4de0-a964-42dc92c2af28": {
             "Offset": 0,
@@ -18,7 +18,7 @@
         },
         "414506b3-ae82-4ba7-854d-d270ca79b68b": {
             "Offset": 0,
-            "Text": "The crew has become restive. Intercept the voidships of our enemy."
+            "Text": "The crew has grown sluggish. Master Helmsman, set a course to intercept those voidships at once!."
         }
     }
 }
