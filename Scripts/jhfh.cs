@@ -60,8 +60,16 @@ class jhfhAnswerCheck : GameAction
         Tuple<string, string>[][] enemies = new Tuple<string, string>[][] {
             new Tuple<string, string>[] {
                 Tuple.Create("488db3e26aca4e7198e5ca14c97b18e3", ""), // TzeentchHorrorsSpaceHulkGroup_1
+                Tuple.Create("ceef9c2a48f845e99caa46d238d91f44", ""), // jhfhNurgleLowerDecksGroup_0
+                Tuple.Create("472f31e7011b4a3da560146d2615899f", ""), // jhfhBloodlettersMacrocannonGroup_0 
+                Tuple.Create("c0b3a16971374ef39f5a553ae2716190", "")  // jhfhServetorsGroup
+            },
+            new Tuple<string, string>[] {
+                Tuple.Create("c0b3a16971374ef39f5a553ae2716190", ""), // jhfhServetorsGroup
+                Tuple.Create("488db3e26aca4e7198e5ca14c97b18e3", ""), // TzeentchHorrorsSpaceHulkGroup_1
                 Tuple.Create("e1e80b0b555746d0b388f372aeb3eaa1", ""), // NurgleLowerDecksGroup_1
-                Tuple.Create("004aa8a6185645589b19d199c86073cb", "")  // BloodlettersMacrocannonGroup_1
+                Tuple.Create("004aa8a6185645589b19d199c86073cb", ""), // BloodlettersMacrocannonGroup_1
+                Tuple.Create("f3653fa119664d22b76e1921862bea6f", "")  // PsykersDrukhariAttackGroup_1
             },
             new Tuple<string, string>[] {
                 Tuple.Create("488db3e26aca4e7198e5ca14c97b18e3", ""), // TzeentchHorrorsSpaceHulkGroup_1
@@ -70,7 +78,7 @@ class jhfhAnswerCheck : GameAction
                 Tuple.Create("f3653fa119664d22b76e1921862bea6f", ""), // PsykersDrukhariAttackGroup_1
                 Tuple.Create("9d8956e784ad4f4c9612771e91e951fd", ""), // BloodlettersControlledMacrocannonGroup
                 Tuple.Create("bcad57ba2c45457482ca546628f9f58c", ""), // DemonetteDrukhariAttackGroup_1
-                Tuple.Create("ce9587a2383c43c7b3b76de3d5280d52", "") // ServetorsAndDemonGroup
+                Tuple.Create("ce9587a2383c43c7b3b76de3d5280d52", "")  // ServetorsAndDemonGroup
             },
             new Tuple<string, string>[] {
                 Tuple.Create("488db3e26aca4e7198e5ca14c97b18e3", ""), // TzeentchHorrorsSpaceHulkGroup_1
@@ -80,9 +88,15 @@ class jhfhAnswerCheck : GameAction
                 Tuple.Create("9d8956e784ad4f4c9612771e91e951fd", ""), // BloodlettersControlledMacrocannonGroup
                 Tuple.Create("bcad57ba2c45457482ca546628f9f58c", ""), // DemonetteDrukhariAttackGroup_1
                 Tuple.Create("ce9587a2383c43c7b3b76de3d5280d52", ""), // ServetorsAndDemonGroup
+                Tuple.Create("e998c5102c064cb78d62f4e472ab61a6", "") // TzeentchPortalsLowerDecksGroup_1
+            },
+            new Tuple<string, string>[] {
+                Tuple.Create("9d8956e784ad4f4c9612771e91e951fd", ""), // BloodlettersControlledMacrocannonGroup
+                Tuple.Create("bcad57ba2c45457482ca546628f9f58c", ""), // DemonetteDrukhariAttackGroup_1
+                Tuple.Create("ce9587a2383c43c7b3b76de3d5280d52", ""), // ServetorsAndDemonGroup
                 Tuple.Create("e998c5102c064cb78d62f4e472ab61a6", ""), // TzeentchPortalsLowerDecksGroup_1
                 Tuple.Create("39a6bd7e30ea413eae3ab11dc095b7c2", ""), // KhornHoldGroup_1
-                Tuple.Create("fde19db3589745b58157a9c2ee27a36f", "") // TzintchHoldGroup_1
+                Tuple.Create("fde19db3589745b58157a9c2ee27a36f", "")  // TzintchHoldGroup_1
             }
         };
 
@@ -139,20 +153,24 @@ class jhfhAnswerCheck : GameAction
         var log = PFLog.Mods;
         log.Log("jhfh: Generating space battle encounter");
 
-        string[][] battles = new string[3][];
+        string[][] battles = new string[5][];
 
-        battles[0] = new string[] { // Yellow Battles
+        battles[0] = new string[] { // Green Battles
             "057f42c5bb7840eabbdef9d0e6e60279",
+            "2839d44ace7547b5ace4531be3171f67",
+            "035e5110bdb0424cb731ce1807e29d90"
+        };
+        battles[1] = new string[] { // Yellow Battles
             "2839d44ace7547b5ace4531be3171f67",
             "035e5110bdb0424cb731ce1807e29d90",
             "2839d44ace7547b5ace4531be3171f67",
             "1227d881701e41a2bb8d246f0a1f72c8",
-            "2ad064881c164601825c03eb2d6e7eae"
+            "2ad064881c164601825c03eb2d6e7eae",
+            "f12d2775ed76412b8d8526c6cfa23a6d",
+            "52c8c0830bf343e68b4a12ab60f7b2b5",
+            "e10f1f4ce7d54dc2a44c3ee24ce84ef2"
         };
-        battles[1] = new string[] { // Orange Battles
-            "057f42c5bb7840eabbdef9d0e6e60279",
-            "2839d44ace7547b5ace4531be3171f67",
-            "035e5110bdb0424cb731ce1807e29d90",
+        battles[2] = new string[] { // Orange Battles
             "2839d44ace7547b5ace4531be3171f67",
             "1227d881701e41a2bb8d246f0a1f72c8",
             "2ad064881c164601825c03eb2d6e7eae",
@@ -161,7 +179,15 @@ class jhfhAnswerCheck : GameAction
             "e10f1f4ce7d54dc2a44c3ee24ce84ef2",
             "1d2e53fdcb1c41f082ca24e3d57b12bc"
         };
-        battles[2] = new string[] { // Red Battles
+        battles[3] = new string[] { // Red Battles
+            "1227d881701e41a2bb8d246f0a1f72c8",
+            "2ad064881c164601825c03eb2d6e7eae",
+            "f12d2775ed76412b8d8526c6cfa23a6d",
+            "52c8c0830bf343e68b4a12ab60f7b2b5",
+            "e10f1f4ce7d54dc2a44c3ee24ce84ef2",
+            "1d2e53fdcb1c41f082ca24e3d57b12bc"
+        };
+        battles[4] = new string[] { // black Battles
             "f12d2775ed76412b8d8526c6cfa23a6d",
             "52c8c0830bf343e68b4a12ab60f7b2b5",
             "e10f1f4ce7d54dc2a44c3ee24ce84ef2",
@@ -205,23 +231,33 @@ class jhfhAnswerCheck : GameAction
     public static int GetDifficultyIndex()
     {
         string[] difficulties = {
+            "Green",
             "Yellow",
             "Orange",
-            "Red"
+            "Red",
+            "Black"
         };
 
         int level = Game.Instance.Player.PartyLevel;
-        if (level <= 20)
+        if (level <= 15)
         {
-            return 0; // Yellow
+            return 0; // Green
         }
-        else if (level > 20 && level <= 35)
+        else if (level > 15 && level <= 25)
         {
-            return 1; // Orange
+            return 1; // Yellow
+        }
+        else if (level > 25 && level <= 35)
+        {
+            return 2; // Orange
+        }
+        else if (level > 35 && level <= 45)
+        {
+            return 3; // red
         }
         else
         {
-            return 2; // Red
+            return 4; // black
         }
     }
 

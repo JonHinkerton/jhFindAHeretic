@@ -1,0 +1,33 @@
+{
+  "AssetId": "472f31e7011b4a3da560146d2615899f",
+  "Data": {
+    "$type": "20257e9e386b4d73a2b6fe68f51bab0e, BlueprintRandomGroupOfUnits",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [],
+    "Author": "Unknown",
+    "Comment": "",
+    "Units": [
+      {
+        "Unit": "!bp_3ff2769c18ae4e76a17e649c93419433",
+        "UnitsCount": 1,
+        "IsMandatoryInGroup": true
+      },
+      {
+        "Unit": "!bp_7a7327c4312049768e43f45a0546fbef",
+        "UnitsCount": 2,
+        "IsMandatoryInGroup": false
+      },
+      {
+        "Unit": "!bp_40565580cf604d33a4c3c663203e33fa",
+        "UnitsCount": 6,
+        "IsMandatoryInGroup": false
+      }
+    ],
+    "MinCount": 4,
+    "MaxCount": 8
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}
