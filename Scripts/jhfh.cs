@@ -157,13 +157,11 @@ class jhfhAnswerCheck : GameAction
 
         battles[0] = new string[] { // Green Battles
             "057f42c5bb7840eabbdef9d0e6e60279",
-            "2839d44ace7547b5ace4531be3171f67",
             "035e5110bdb0424cb731ce1807e29d90"
         };
         battles[1] = new string[] { // Yellow Battles
             "2839d44ace7547b5ace4531be3171f67",
             "035e5110bdb0424cb731ce1807e29d90",
-            "2839d44ace7547b5ace4531be3171f67",
             "1227d881701e41a2bb8d246f0a1f72c8",
             "2ad064881c164601825c03eb2d6e7eae",
             "f12d2775ed76412b8d8526c6cfa23a6d",
